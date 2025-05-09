@@ -15,6 +15,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap');
 
 /* 3. Base Styles */
+<head>
+<style>
+#grad1 {
+  height: 200px;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+</style>
+</head>
+
+
+
 * {
   margin: 0;
   padding: 0;
