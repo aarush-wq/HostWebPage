@@ -1,122 +1,200 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aarush Maharana | Portfolio</title>
 
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<head>
-    <style>
-        .header {
-            background-color:#48008b88;
-            padding: 15px;
-            text-align: center;
-        }
-        .header h2 {
-            color: white;
-            margin: 0;
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        <h2>Aarush Maharana</h2>
-    </div>
-<style>
-body {background-color: #fefbd8;}
-h1   {color: #87bdd8;}
-p    {color:#87bdd8;}
-</style>
-</body>
-</html>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-<style>
-p {
-  border: 7px solid white
-;
-  padding: 10px;
-}
-</style>
+  <style>
+    :root {
+      --primary: #4b0082;
+      --secondary: #6a5acd;
+      --bg: #f4f6fb;
+      --card: #ffffff;
+      --text: #333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+    }
+
+    header p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 25px;
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    section h2 {
+      color: var(--primary);
+      margin-bottom: 15px;
+      border-left: 5px solid var(--secondary);
+      padding-left: 10px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .skills li::before {
+      content: "✔ ";
+      color: var(--secondary);
+      font-weight: bold;
+    }
+
+    .projects li {
+      margin-bottom: 20px;
+    }
+
+    .projects h3 {
+      color: var(--secondary);
+    }
+
+    .contact a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .school-image {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .school-image img {
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
 
   <!-- Header -->
-
-<header>
-<p>My portfolio :> </p>
-
+  <header>
+    <h1>Aarush Maharana</h1>
+    <p>Student | Innovator | Tech & Aviation Enthusiast</p>
   </header>
 
-  <!-- About Me Section -->
-  <section id="about-me">
+  <!-- About Me -->
+  <section>
     <h2>About Me</h2>
     <p>
-    My name is Aarush Maharana,a student of class 8 currently studying in DAV pokhariput.
+      My name is Aarush Maharana. I am a student of Class 8, currently studying at DAV Public School, Pokhariput.
+      I have a strong interest in technology, innovation, and aviation.
     </p>
   </section>
 
-
-<!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
+  <!-- Skills -->
+  <section>
+    <h2>Skills & Interests</h2>
+    <ul class="skills">
       <li>Football</li>
       <li>Aviation Enthusiast</li>
+      <li>Basic Engineering Projects</li>
+      <li>Creative Problem Solving</li>
     </ul>
- 
-  
-<style>
-p {
-  border: 7px solid white
-;
-  padding: 10px;
-  }
-</style>
- </section>
+  </section>
 
-  <!-- Education Section -->
-  <section id="education">
+  <!-- Education -->
+  <section>
     <h2>Education</h2>
     <ul>
       <li>
         <strong>Education until 8th Grade</strong><br>
-        Multiple Schools, 2014-2025
+        Multiple Schools (2014 – 2025)
       </li>
       <li>
-        <strong>High School</strong><br>
-        DAV Public School, Pokhariput, 2025–2026
+        <strong>DAV Public School, Pokhariput</strong><br>
+        Class 8 (2025 – 2026)
       </li>
     </ul>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
+  <!-- Projects -->
+  <section>
     <h2>Projects</h2>
-    <ul>
+    <ul class="projects">
       <li>
-        <h3> Hyperloop </h3>
-        <p>
-         A MAGLEV inspired transportation system.
-        </p>
+        <h3>Hyperloop Concept</h3>
+        <p>A MAGLEV-inspired high-speed transportation system concept.</p>
       </li>
       <li>
-        <h3>Automated Traffic Lights</h3>
-        <p>
-          An automated traffic light system with more useful features.
-        </p>
+        <h3>Automated Traffic Light System</h3>
+        <p>An intelligent traffic management system with enhanced automation.</p>
       </li>
       <li>
         <h3>Ultrasonic Sensor Car</h3>
-        <p>
-          A React-based prototype that stops when obstacles are sensed.
-        </p>
+        <p>A prototype vehicle that detects obstacles and stops automatically.</p>
       </li>
     </ul>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
+  <!-- Contact -->
+  <section class="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:maharanaaarush@gmail.com">Maharanaaarush@gmail.com</a></p>
-    <p>Youtube: <a href="https://www.youtube.com/@Has_noobscales">https://www.youtube.com/@Has_noobscales
+    <p>Email: <a href="mailto:maharanaaarush@gmail.com">maharanaaarush@gmail.com</a></p>
+    <p>YouTube: <a href="https://www.youtube.com/@Has_noobscales" target="_blank">@Has_noobscales</a></p>
   </section>
 
-<img src="C:\Users\Welcome\Downloads\davpkt.jpg" alt=" DAV Public School, Pokhariput" width="350" height="350">
+
+  <footer>
+    © 2025 Aarush Maharana | Personal Portfolio
+  </footer>
+
+</body>
+</html>
