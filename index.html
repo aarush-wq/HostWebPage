@@ -1,1 +1,351 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>Aarush Maharana | Portfolio</title> <!-- Google Font --> <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"> <style> :root { --primary: #4b0082; --accent: #7b68ee; --bg: #f2f4f8; --card-bg: rgba(255, 255, 255, 0.75); --text-main: #2e2e2e; --text-light: #555; } * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; } body { background: linear-gradient(180deg, #eef1ff, #f7f8fc); color: var(--text-main); line-height: 1.7; } /* ===== HEADER ===== */ header { background: linear-gradient(135deg, var(--primary), var(--accent)); color: #fff; padding: 60px 20px 50px; text-align: center; } header h1 { font-size: 2.4rem; font-weight: 600; letter-spacing: 0.5px; } header p { margin-top: 10px; font-size: 1.05rem; opacity: 0.95; } /* ===== SECTIONS ===== */ section { max-width: 900px; margin: 35px auto; padding: 30px; background: var(--card-bg); border-radius: 16px; backdrop-filter: blur(10px); box-shadow: 0 15px 35px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; } section:hover { transform: translateY(-4px); box-shadow: 0 20px 45px rgba(0,0,0,0.12); } section h2 { font-size: 1.4rem; color: var(--primary); margin-bottom: 18px; position: relative; padding-left: 14px; } section h2::before { content: ""; position: absolute; left: 0; top: 6px; width: 5px; height: 24px; background: linear-gradient(var(--primary), var(--accent)); border-radius: 10px; } section p { color: var(--text-light); } /* ===== LISTS ===== */ ul { list-style: none; } li { margin-bottom: 12px; color: var(--text-light); } .skills li::before { content: "✦ "; color: var(--accent); font-weight: 600; } /* ===== PROJECTS ===== */ .projects h3 { font-size: 1.1rem; color: var(--accent); margin-bottom: 5px; } /* ===== CONTACT ===== */ .contact a { color: var(--primary); font-weight: 500; text-decoration: none; } .contact a:hover { text-decoration: underline; } /* ===== IMAGE ===== */ .school-image { display: flex; justify-content: center; margin: 40px 0; } .school-image img { width: 300px; border-radius: 18px; box-shadow: 0 12px 30px rgba(0,0,0,0.18); transition: transform 0.3s ease; } .school-image img:hover { transform: scale(1.03); } /* ===== FOOTER ===== */ footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; } /* ===== RESPONSIVE ===== */ @media (max-width: 600px) { header h1 { font-size: 2rem; } section { margin: 25px 15px; padding: 22px; } } </style> </head> <body> <!-- HEADER --> <header> <h1>Aarush Maharana</h1> <p>Student • Innovator • Technology & Aviation Enthusiast</p> </header> <!-- ABOUT --> <section> <h2>About Me</h2> <p> I am Aarush Maharana, a Class 8 student at DAV Public School, Pokhariput. I enjoy learning about technology, engineering concepts, and aviation, and I like turning ideas into practical projects. </p> </section> <!-- SKILLS --> <section> <h2>Skills & Interests</h2> <ul class="skills"> <li>Football</li> <li>Aviation & Space Concepts</li> <li>Basic Electronics & Sensors</li> <li>Creative Problem Solving</li> </ul> </section> <!-- EDUCATION --> <section> <h2>Education</h2> <ul> <li> <strong>Early Education – Class 8</strong><br> Multiple Schools (2014 – 2025) </li> <li> <strong>DAV Public School, Pokhariput</strong><br> Class 8 (2025 – 2026) </li> </ul> </section> <!-- PROJECTS --> <section> <h2>Projects</h2> <ul class="projects"> <li> <h3>Hyperloop Transportation Concept</h3> <p>A MAGLEV-inspired ultra-high-speed transportation system idea.</p> </li> <li> <h3>Automated Traffic Light System</h3> <p>Smart traffic control using automation for better flow.</p> </li> <li> <h3>Ultrasonic Sensor Car</h3> <p>An obstacle-detecting car prototype using ultrasonic sensors.</p> <h3>Invictus OS</h3> </li> </ul> </section> <!-- CONTACT --> <section class="contact"> <h2>Contact</h2> <p>Email: <a href="mailto:maharanaaarush@gmail.com">maharanaaarush@gmail.com</a></p> <p>YouTube: <a href="https://www.youtube.com/@Has_noobscales" target="_blank">@Has_noobscales</a></p> </section> <footer> © 2025 Aarush Maharana • Personal Portfolio </footer> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aarush Maharana | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --primary: #13294b;   /* deep cockpit blue */
+  --accent: #1e90ff;    /* sky blue */
+  --accent-soft: rgba(30, 144, 255, 0.16);
+  --bg-top: #e6f0ff;
+  --bg-bottom: #f7f9ff;
+  --card-bg: rgba(255, 255, 255, 0.82);
+  --card-border: rgba(19, 41, 75, 0.09);
+  --text-main: #1f2933;
+  --text-light: #4b5563;
+  --runway: rgba(15, 23, 42, 0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(173, 216, 230, 0.7), transparent 60%),
+    linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
+  color: var(--text-main);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+header {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: #fff;
+  padding: 68px 20px 56px;
+  text-align: center;
+}
+
+/* horizon + clouds effect */
+header::before,
+header::after {
+  content: "";
+  position: absolute;
+  inset: auto -20%;
+  height: 120px;
+  background: radial-gradient(circle at 20% 0%, rgba(255,255,255,0.7), transparent 55%),
+              radial-gradient(circle at 80% 0%, rgba(255,255,255,0.55), transparent 60%);
+  opacity: 0.35;
+  pointer-events: none;
+}
+header::before {
+  bottom: -40px;
+}
+header::after {
+  bottom: -70px;
+  opacity: 0.18;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.05rem;
+  opacity: 0.96;
+}
+
+/* flight badge */
+.flight-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 7px 16px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.35);
+  border: 1px solid rgba(255,255,255,0.28);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.flight-badge span {
+  opacity: 0.9;
+}
+
+.flight-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 10px rgba(74, 222, 128, 0.9);
+}
+
+/* tiny airplane icon */
+.flight-plane {
+  position: relative;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+}
+.flight-plane::before {
+  content: "✈";
+  position: absolute;
+  inset: 0;
+  font-size: 0.9rem;
+}
+
+/* ===== SECTIONS ===== */
+section {
+  max-width: 900px;
+  margin: 36px auto;
+  padding: 30px;
+  background: var(--card-bg);
+  border-radius: 18px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.06);
+  border: 1px solid var(--card-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle “altitude strip” */
+section::after {
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  background: radial-gradient(circle at 0 50%, var(--accent-soft), transparent 55%);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+  border-color: rgba(30, 64, 175, 0.25);
+}
+
+section h2 {
+  font-size: 1.4rem;
+  color: var(--primary);
+  margin-bottom: 18px;
+  position: relative;
+  padding-left: 18px;
+}
+
+/* runway‑style stripe */
+section h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 6px;
+  height: 24px;
+  background: linear-gradient(var(--primary), var(--accent));
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px var(--runway);
+}
+
+section p {
+  color: var(--text-light);
+}
+
+/* ===== LISTS ===== */
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 12px;
+  color: var(--text-light);
+}
+
+/* skills bullets like navigation stars */
+.skills li::before {
+  content: "✦ ";
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ===== PROJECTS ===== */
+.projects h3 {
+  font-size: 1.1rem;
+  color: var(--accent);
+  margin-bottom: 5px;
+}
+
+/* tag for concept vs prototype */
+.project-tag {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(30, 64, 175, 0.06);
+  color: var(--primary);
+}
+
+/* ===== CONTACT ===== */
+.contact a {
+  color: var(--primary);
+  font-weight: 500;
+  text-decoration: none;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 22px;
+  font-size: 0.9rem;
+  color: #667085;
+}
+
+/* Optional subtle altitude line above footer */
+footer::before {
+  content: "Cruising at FL080 – Student journey in progress";
+  display: block;
+  font-size: 0.75rem;
+  margin-bottom: 6px;
+  color: #9ca3af;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.1rem;
+  }
+  section {
+    margin: 26px 16px;
+    padding: 22px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <h1>Aarush Maharana</h1>
+  <p>Student • Innovator • Technology & Aviation Enthusiast</p>
+
+  <div class="flight-badge">
+    <span class="flight-dot"></span>
+    <span>Flight log · Aarush</span>
+    <span class="flight-plane"></span>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section>
+  <h2>Pre‑Flight Briefing (About Me)</h2>
+  <p>
+    I am Aarush Maharana, a Class 8 student at DAV Public School, Pokhariput.
+    I enjoy learning about technology, engineering concepts, and aviation, and I like turning ideas into practical projects.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section>
+  <h2>Cockpit Skills & Interests</h2>
+  <ul class="skills">
+    <li>Football</li>
+    <li>Aviation & Space Concepts</li>
+    <li>Basic Electronics & Sensors</li>
+    <li>Creative Problem Solving</li>
+  </ul>
+</section>
+
+<!-- EDUCATION -->
+<section>
+  <h2>Flight Training (Education)</h2>
+  <ul>
+    <li>
+      <strong>Early Education – Class 8</strong><br>
+      Multiple Schools (2014 – 2025)
+    </li>
+    <li>
+      <strong>DAV Public School, Pokhariput</strong><br>
+      Class 8 (2025 – 2026)
+    </li>
+  </ul>
+</section>
+
+<!-- PROJECTS -->
+<section>
+  <h2>Mission Log (Projects)</h2>
+  <ul class="projects">
+    <li>
+      <h3>Hyperloop Transportation Concept
+        <span class="project-tag">Concept</span>
+      </h3>
+      <p>A MAGLEV‑inspired ultra‑high‑speed transportation system idea, designed like a near‑vacuum flight corridor on the ground.</p>
+    </li>
+    <li>
+      <h3>Automated Traffic Light System
+        <span class="project-tag">Automation</span>
+      </h3>
+      <p>Smart traffic control using automation for better flow, similar to how air‑traffic control manages aircraft movements.</p>
+    </li>
+    <li>
+      <h3>Ultrasonic Sensor Car
+        <span class="project-tag">Prototype</span>
+      </h3>
+      <p>An obstacle‑detecting car prototype using ultrasonic sensors, inspired by how aircraft use instruments to avoid hazards.</p>
+    </li>
+    <li>
+      <h3>Invictus OS
+        <span class="project-tag">Systems</span>
+      </h3>
+      <p>A custom operating‑system concept that imagines a smooth, cockpit‑style interface for users.</p>
+    </li>
+  </ul>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <h2>Control Tower (Contact)</h2>
+  <p>Email: <a href="mailto:maharanaaarush@gmail.com">maharanaaarush@gmail.com</a></p>
+  <p>YouTube: <a href="https://www.youtube.com/@Has_noobscales" target="_blank">@Has_noobscales</a></p>
+</section>
+
+<footer>
+  © 2025 Aarush Maharana • Personal Portfolio
+</footer>
+
+</body>
+</html>
